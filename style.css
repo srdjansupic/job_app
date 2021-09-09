@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: aliceblue;
+    font-family: 'Nunito Sans', sans-serif;
+}
+header{
+    height: 200px;
+    background: rgb(2,0,36);
+background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(17,85,126,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+header input{
+    user-select: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 300px;
+    padding-left: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+}
+
+.jobList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.job{
+    height: 120px;
+    margin-bottom: 20px;
+    width: 75%;
+    box-shadow: -1px 2px 7px #a7a5a5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7f9fb;
+    border-left: 3px solid rgb(30, 72, 128);
+}
+.company{
+    display: flex;
+    align-items: center;
+}
+.img{
+    margin-left: 10px;
+}
+.name-company {
+    display: flex;
+    align-items: center;
+}
+.name-company h1{
+    font-size: 20px;
+}
+.job-description{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left:15px;
+}
+
+.new{
+    font-size: 15px;
+    padding:5px 10px;
+    background-color: #2d87af;
+     color:white;
+     text-transform: uppercase;
+     border-radius: 10px;
+     margin-left: 10px;
+}
+.featured{
+    font-size: 15px;
+    padding:5px 10px;
+     background-color: rgb(30, 34, 34);
+     color:white;
+     text-transform: uppercase;
+     border-radius: 10px;
+     margin-left: 10px;
+}
+.technologies span{
+    padding: 5px 10px;
+    background: #c9eeff;
+    border-radius: 10px;
+    color: #115b9a;
+    font-weight: 800;
+    margin: 10px;
+}
+
+@media screen and (max-width:1200px){
+    .job{
+    flex-direction: column;
+    height: 170px;
+    justify-content: space-around;
+    }
+    .company {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #a09c9c;
+    }
+}
+
+@media screen and (max-width:600px){
+    .job{
+    width:90%;
+    }
+}
+
+@media screen and (max-width:450px){
+    .technologies span {
+        margin: 2px;
+        font-size: 12px;
+    }
+    .new{
+        font-size: 11px;
+        margin-left: 5px;
+    }
+    .featured{
+        font-size: 11px;
+        margin-left: 5px;
+    }
+    .name-company h1 {
+        font-size: 16px;
+    }
+    .img{
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+    .job-description{
+        margin-left: 5px;
+    }
+}
